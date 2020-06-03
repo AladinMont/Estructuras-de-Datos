@@ -6,6 +6,13 @@ struct Doble {
     struct Doble *anterior;
 };
 
+struct Doble *Ingresar(struct Doble *Lista) {
+    if(lista==NULL){
+        return NULL;
+    }
+     
+} 
+
 struct Doble *invertir(struct Doble  *lista) {
     struct Doble *auxiliar=NULL;
     struct Doble *temporal=NULL;
