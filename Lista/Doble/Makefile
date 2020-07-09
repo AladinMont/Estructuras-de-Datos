@@ -12,6 +12,6 @@ run: a.out
 	./a.out
 
 clean:
-	rm -f a.out main.o Doble.o
+	rm -f a.out main.o doble.o
 
 
