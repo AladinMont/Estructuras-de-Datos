@@ -1,13 +1,23 @@
-#include "PilaE.h"
+#include "ColaE.h"
 
 int main (void){
-    struct pila *cabeza=(struct pila *)malloc(sizeof(struct pila));
-    cabeza->tope=-1;    
+    struct cola *cabeza=(struct cola *)malloc(sizeof(struct cola));
+    cabeza->frente=-1;    
+    cabeza->atras=-1;
 
-    push(&cabeza,1);
-    push(&cabeza,2);
-    push(&cabeza,3);
+    enqueue(&cabeza,1);
+    enqueue(&cabeza,2);
+    enqueue(&cabeza,3);
+    enqueue(&cabeza,4);
+    enqueue(&cabeza,5);
+    enqueue(&cabeza,6);
+    enqueue(&cabeza,7);
+    enqueue(&cabeza,8);
+    enqueue(&cabeza,9);
+    enqueue(&cabeza,10);
     desplegar(cabeza);
-    pop(&cabeza);
+    dequeue(&cabeza);
+    desplegar(cabeza);
+    dequeue(&cabeza);
     desplegar(cabeza);
 }
