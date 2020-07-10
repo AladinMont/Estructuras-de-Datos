@@ -8,4 +8,6 @@ int main (void){
     push(&cabeza,2);
     push(&cabeza,3);
     desplegar(cabeza);
+    pop(&cabeza);
+    desplegar(cabeza);
 }
