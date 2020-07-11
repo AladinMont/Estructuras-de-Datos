@@ -4,10 +4,6 @@ int funcion_hash( int dato ){
 	return dato*dato % 100;
 }
 
-int funcion_rehash( int dato, int intento){
-	return (int) dato*(dato+intento) % 100;
-}
-
 int insertar(struct hash tabla[], int dato){
 	struct lista *nuevo=crearlista(dato);
     int donde = funcion_hash( dato );
