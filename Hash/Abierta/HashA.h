@@ -16,7 +16,6 @@ typedef struct lista{
 }lista;
 
 int funcion_hash( int dato );
-int funcion_rehash( int dato, int intento);
 int insertar(struct hash tabla[], int dato);
 struct lista *crearlista(int dato);
 struct lista * agregarPpio(struct lista *lista, struct lista *nuevoNodo);
