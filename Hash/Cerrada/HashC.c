@@ -15,12 +15,14 @@ int insertar(struct hash *tabla, int dato){
 	if( tabla -> libre[ donde  ] == 1 ){
 		tabla->datos[ donde ] = dato;
 		tabla->cuantos++;
+        tabla->libre[donde]=0;
 	}else{
-		for(size_t i =0; tabla -> libre[donde]==0; i++){
+		for(int i =0; tabla -> libre[donde]==0; i++){
 			donde = funcion_rehash(dato, i);
 		}
 		tabla->datos[ donde ] = dato;
 		tabla->cuantos++;
+        tabla->libre[donde]=0;
 	}
 }
 
